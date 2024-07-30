@@ -6,7 +6,23 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#293241'
+        'navy': '#202834',
+        'dark_blue': '#3D5A80',
+        'sky_blue': '#98C1D9',
+        'cyan': '#E0FBFC',
+        'orange': '#EE6C4D',
+        'white': '#FFFFFF',
+        'light_white': '#FCF4F4',
+        'gray': '#B0B0B0',
+        'dark_fill': '#272C34',
+        'green': '#188016'
+      },
+      fontFamily: {
+        popblack: ['Poppins-Black', 'sans-serif'],
+        popblackitalic: ['Poppins-BlackItalic', 'sans-serif'],
+        popbold: ['Poppins-Bold', 'sans-serif'],
+        popbolditalic: ['Poppins-BoldItalic', 'sans-serif'],
+        popextrabold: ['Poppins-ExtraBold', 'sans-serif']
       }
     },
   },
