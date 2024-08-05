@@ -19,10 +19,24 @@ module.exports = {
       },
       fontFamily: {
         popblack: ['Poppins-Black', 'sans-serif'],
-        popblackitalic: ['Poppins-BlackItalic', 'sans-serif'],
         popbold: ['Poppins-Bold', 'sans-serif'],
-        popbolditalic: ['Poppins-BoldItalic', 'sans-serif'],
-        popextrabold: ['Poppins-ExtraBold', 'sans-serif']
+        popextrabold: ['Poppins-ExtraBold', 'sans-serif'],
+        popextralight: ['Poppins-ExtraLight', 'sans-serif'],
+        poplight: ['Poppins-Light', 'sans-serif'],
+        popmedium: ['Poppins-Medium', 'sans-serif'],
+        popregular: ['Poppins-Regular', 'sans-serif'],
+        popsemibold: ['Poppins-SemiBold', 'sans-serif'],
+        popthin: ['Poppins-Thin', 'sans-serif'],
+
+        interblack: ['Inter-Black', 'sans-serif'],
+        interbold: ['Inter-Bold', 'sans-serif'],
+        interextrabold: ['Inter-ExtraBold', 'sans-serif'],
+        interextralight: ['Inter-ExtraLight', 'sans-serif'],
+        interlight: ['Inter-Light', 'sans-serif'],
+        intermedium: ['Inter-Medium', 'sans-serif'],
+        interregular: ['Inter-Regular', 'sans-serif'],
+        intersemibold: ['Inter-SemiBold', 'sans-serif'],
+        interthin: ['Inter-Thin', 'sans-serif']
       }
     },
   },

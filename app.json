@@ -5,7 +5,7 @@
     "scheme": "myStyle",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/views/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/views/icon.png",
