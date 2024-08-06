@@ -35,5 +35,5 @@ export default {
     wardrobe_icon,
     selected_scan_icon,
     selected_settings_icon,
-    selected_wardrobe_icon
+    selected_wardrobe_icon,
 };

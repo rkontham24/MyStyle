@@ -35,5 +35,5 @@ export default {
     shoe_blue,
     effects_e,
     lens,
-    logo
+    logo,
 };
