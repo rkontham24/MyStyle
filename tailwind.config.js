@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       colors: {
         'nav': '#202834',
+        'new_nav': '#FFFFFF',
         'dark_blue': '#3D5A80',
         'sky_blue': '#98C1D9',
         'cyan': '#E0FBFC',

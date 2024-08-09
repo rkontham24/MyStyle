@@ -16,6 +16,8 @@ import wardrobe_icon from "../assets/views/tabs/full_icon_wardrobe_2.png";
 import selected_scan_icon from "../assets/views/tabs/selected_icon_scan.png";
 import selected_settings_icon from "../assets/views/tabs/selected_icon_settings.png";
 import selected_wardrobe_icon from "../assets/views/tabs/selected_icon_wardrobe.png";
+import orange_menu from "../assets/views/splash/orange_elipse.png"
+import white_menu from "../assets/views/splash/white_elipse.png"
 
 export default {
     fod,
@@ -36,4 +38,6 @@ export default {
     selected_scan_icon,
     selected_settings_icon,
     selected_wardrobe_icon,
+    orange_menu,
+    white_menu,
 };
