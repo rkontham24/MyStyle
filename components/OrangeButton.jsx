@@ -1,11 +1,16 @@
-import { View, Text } from 'react-native'
+import { TouchableOpacity, Text, Image } from 'react-native'
 import React from 'react'
+import icons from '../constants/icons';
 
-const OrangeButton = () => {
+
+const OrangeButton = ({style}) => {
   return (
-    <View>
-      <Text>OrangeButton</Text>
-    </View>
+    <TouchableOpacity>
+        <Image
+            source = {icons.orange_menu}
+            style = {style}
+        />
+    </TouchableOpacity>
   )
 }
 

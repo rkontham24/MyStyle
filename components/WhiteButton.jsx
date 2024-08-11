@@ -1,11 +1,16 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { TouchableOpacity, Text, Image } from 'react-native'
+import React from 'react';
+import icons from '../constants/icons';
 
-const WhiteButton = () => {
+
+const WhiteButton = ({handlePress, style}) => {
   return (
-    <View>
-      <Text>WhiteButton</Text>
-    </View>
+    <TouchableOpacity onPress = {handlePress}>
+        <Image
+            source = {icons.white_menu}
+            style = {style}
+        />
+    </TouchableOpacity>
   )
 }
 

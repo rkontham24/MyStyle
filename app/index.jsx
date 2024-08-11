@@ -1,10 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { ScrollView, Text, View, Image, ImageBackground, TouchableOpacity } from 'react-native';
+import { ScrollView, Text, View, Image } from 'react-native';
 import { Redirect, router, Link } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import images from "../constants";
 import icons from '../constants/icons';
+import WhiteButton from '../components/WhiteButton';
+import OrangeButton from '../components/OrangeButton';
 
 export default function App() {
   return (
@@ -55,31 +57,28 @@ export default function App() {
             Welcome to your personal wardrobe.
           </Text>
 
-         
-          <Image
-            source = {icons.orange_menu}
-            style = {{position: 'absolute', top: 746, left: 90}}
+          <OrangeButton
+            style = {{position: 'absolute', top: 746, left: -117}}
           />
 
-          <Image
-              source = {icons.white_menu}
-              style = {{position: 'absolute', top: 746, left: 145}}
+          <WhiteButton
+            handlePress={() => router.push('/scan')}
+            style = {{position: 'absolute', top: 746, left: -62}}
           />
 
-
-          <Image
-            source = {icons.white_menu}
-            style = {{position: 'absolute', top: 746, left: 201}}
+          <WhiteButton
+            handlePress={() => router.push('/save')}
+            style = {{position: 'absolute', top: 746, left: -6}}
+          />
+          
+          <WhiteButton
+            handlePress={() => router.push('/fod')}
+            style = {{position: 'absolute', top: 746, left: 50}}
           />
 
-          <Image
-            source = {icons.white_menu}
-            style = {{position: 'absolute', top: 746, left: 257}}
-          />
-
-          <Image
-            source = {icons.white_menu}
-            style = {{position: 'absolute', top: 746, left: 313}}
+          <WhiteButton
+            handlePress={() => router.push('/confirm')}
+            style = {{position: 'absolute', top: 746, left: 106}}
           />
           
 
