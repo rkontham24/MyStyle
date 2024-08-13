@@ -17,6 +17,10 @@ import effects_splash from "../assets/views/splash/Effects.png";
 import lens from "../assets/views/splash/Lens.png";
 import logo from "../assets/views/splash/logo.png";
 import underline_splash from "../assets/views/splash/underline_splash.png"
+import underline_scan from "../assets/views/intro_scan/underline_scan.png"
+import underline_save from "../assets/views/save_and_browse/underline_save.png"
+import underline_fod from "../assets/views/fod/underline_fod.png"
+import underline_go from "../assets/views/go/underline_go.png"
 
 export default {
     effects_fod,
@@ -38,4 +42,8 @@ export default {
     lens,
     logo,
     underline_splash,
+    underline_scan,
+    underline_save,
+    underline_fod,
+    underline_go
 };

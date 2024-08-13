@@ -18,6 +18,7 @@ import selected_settings_icon from "../assets/views/tabs/selected_icon_settings.
 import selected_wardrobe_icon from "../assets/views/tabs/selected_icon_wardrobe.png";
 import orange_menu from "../assets/views/splash/orange_elipse.png"
 import white_menu from "../assets/views/splash/white_elipse.png"
+import green_menu from "../assets/views/splash/green_elipse.png"
 
 export default {
     fod,
@@ -40,4 +41,5 @@ export default {
     selected_wardrobe_icon,
     orange_menu,
     white_menu,
+    green_menu
 };
