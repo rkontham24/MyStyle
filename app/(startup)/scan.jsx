@@ -3,7 +3,6 @@ import React from 'react'
 import { Redirect, router } from 'expo-router'
 import { SafeAreaView } from 'react-native-safe-area-context';
 import images from "../../constants";
-import icons from '../../constants/icons';
 import WhiteButton from '../../components/WhiteButton';
 import OrangeButton from '../../components/OrangeButton';
 
