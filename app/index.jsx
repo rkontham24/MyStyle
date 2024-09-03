@@ -7,8 +7,8 @@ import images from "../constants";
 import WhiteButton from '../components/WhiteButton';
 import OrangeButton from '../components/OrangeButton';
 import { SwipeGesture } from 'react-native-swipe-gesture-handler'
-import * as tf from '@tensorflow/tfjs';
-import '@tensorflow/tfjs-react-native';
+//import * as tf from '@tensorflow/tfjs';
+//import '@tensorflow/tfjs-react-native';
 
 export default function App() {
   return (

@@ -6,6 +6,7 @@ import images from "../../constants";
 import icons from '../../constants/icons';
 import TypeField from '../../components/TypeField';
 import { useState } from 'react';
+import DefaultButton from '../../components/DefaultButton';
 
 const signup = () => {
   const [field, setField] = useState({
@@ -68,6 +69,14 @@ const signup = () => {
               confirm_password: e})}
             otherStyle = "mt-8"
             keyboardType = "password"
+          />
+
+          <DefaultButton
+            title = "Sign up"
+            handlePress = {() => router.push('../index')}
+            containerStyles = "w-full mt-7"
+            image = {icons.lets_go}
+            position_top = {520}
           />
         </View>
       </ScrollView>
