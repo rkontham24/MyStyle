@@ -1,4 +1,4 @@
-import { View, Text, ScrollView, Image } from 'react-native'
+import { View, Text, ScrollView, Image, TouchableOpacity, KeyboardAvoidingView } from 'react-native'
 import React from 'react'
 import { Redirect, router } from 'expo-router'
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -18,8 +18,9 @@ const signup = () => {
 
   return (
     <SafeAreaView className = "bg-nav h-full">
-      <ScrollView contentContainerStyke = {{height: '100%'}}>
-        <View className = "w-full justify-center min-h[85px] px-6">
+      <KeyboardAvoidingView className = "w-full justify-center min-h[85px] px-6" behavior = "padding">
+        <ScrollView contentContainerStyke = {{height: '100%'}}>
+        
 
           <Image
             source = {images.images.logo}
@@ -28,7 +29,7 @@ const signup = () => {
           />
 
           <Text
-            className = "text-2xl font-popsemibold"
+            className = "text-2xl font-popsemibold padding-4"
             style = {{color: 'white'}}
             resizeMode = 'contain'
           >
@@ -73,13 +74,26 @@ const signup = () => {
 
           <DefaultButton
             title = "Sign up"
-            handlePress = {() => router.push('../index')}
+            handlePress = {() => router.push('../signup')}
             containerStyles = "w-full mt-7"
             image = {icons.lets_go}
-            position_top = {520}
+            position_top = {35}
           />
-        </View>
-      </ScrollView>
+
+          <View className = "justify-center pt-12 flex-row gap-3">
+              <Text 
+                className = "font-popregular justify-left"
+                style = {{color: 'white'}}
+              >
+                  Have an account?{' '}
+                <TouchableOpacity onPress = {() => router.push('/login')}>
+                  <Text className = "font-popbold text-orange" style = {{textDecorationLine: 'underline'}}>Sign in.</Text>
+                </TouchableOpacity>
+              </Text>
+          </View>
+
+        </ScrollView>
+      </KeyboardAvoidingView>
     </SafeAreaView>
   )
 }
