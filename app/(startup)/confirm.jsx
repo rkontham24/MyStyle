@@ -34,15 +34,12 @@ const Confirm = () => {
             style = {{position: 'absolute', top: 363, left: 148}}
           />
 
-          
-
           <WhiteButton
             handlePress={() => router.navigate('')}
             style = {{position: 'absolute', top: 746, left: -117}}
           />
 
           <WhiteButton
-            handlePress = {() => router.push('/scan')}
             style = {{position: 'absolute', top: 746, left: -62}}
           />
 
