@@ -7,13 +7,39 @@ import icons from '../../constants/icons';
 import TypeField from '../../components/TypeField';
 import { useState } from 'react';
 import DefaultButton from '../../components/DefaultButton';
+import { FIREBASE_AUTH } from './firebase_config';
+import { signInWithEmailAndPassword } from 'firebase/auth';
 
 const login = () => {
 
   const [field, setField] = useState({
-    username: '',
+    email: '',
     password: '',
   })
+  const [loading, setLoading] = useState({
+    loading: false,
+    setLoading: false,
+  })
+
+  const auth = FIREBASE_AUTH; // sets auth to global auth value
+
+  // Checks for correct sign in and pushes to home wardrobe page
+  // Otherwise, error is outputted
+  const signIn = async () => {
+    setLoading(true);
+    try {
+      const response = await signInWithEmailAndPassword(auth, field.email, field.password);
+      console.log(response);
+      router.push('../wardrobe');
+    }
+    catch (error) {
+      console.log(error);
+      alert("Login failed.\nError: " + error.message);
+    }
+    finally {
+      setLoading(false);
+    }
+  }
 
   return (
     <SafeAreaView className = "bg-nav h-full">
@@ -35,10 +61,10 @@ const login = () => {
           </Text>
 
           <TypeField
-            title = "Username"
-            value = {field.username}
+            title = "Email"
+            value = {field.email}
             handleChangeText = {(e) => setField({ ...field,
-              username: e})}
+              email: e})}
             otherStyle = "mt-5"
             keyboardType = "username"
           />
@@ -54,7 +80,7 @@ const login = () => {
 
           <DefaultButton
             title = "Sign in"
-            handlePress = {() => router.push('../login')}
+            handlePress = {() => signIn()}
             containerStyles = "w-full mt-7"
             image = {icons.lets_go}
             position_top = {35}

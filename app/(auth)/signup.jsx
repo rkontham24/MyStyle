@@ -7,6 +7,8 @@ import icons from '../../constants/icons';
 import TypeField from '../../components/TypeField';
 import { useState } from 'react';
 import DefaultButton from '../../components/DefaultButton';
+import { FIREBASE_AUTH } from './firebase_config';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
 
 const signup = () => {
   const [field, setField] = useState({
@@ -15,6 +17,37 @@ const signup = () => {
     password: '',
     confirm_password: ''
   })
+
+  const [loading, setLoading] = useState({
+      loading: false,
+      setLoading: false,
+  })
+
+  const auth = FIREBASE_AUTH;
+
+  // Checks for matching passwords before creating account and routing to wardrobe
+  
+  const signUp = async () => {
+    setLoading(true);
+    if (field.password == field.confirm_password) {
+      try {
+        const response = await createUserWithEmailAndPassword(auth, field.email, field.password);
+        console.log(response);
+        //Future: Add email verification step with API call
+        router.push('../wardrobe');
+      }
+      catch (error) {
+        console.log(error);
+        alert("Login failed.\nError: " + error.message);
+      }
+      finally {
+        setLoading(false);
+      }
+    }
+    else {
+      alert("Passswords do not match.\nPlease try again.");
+    }
+  }
 
   return (
     <SafeAreaView className = "bg-nav h-full">
@@ -74,7 +107,8 @@ const signup = () => {
 
           <DefaultButton
             title = "Sign up"
-            handlePress = {() => router.push('../signup')}
+            //handlePress = {() => router.push('../signup')}
+            handlePress = {() => signUp()}
             containerStyles = "w-full mt-7"
             image = {icons.lets_go}
             position_top = {35}
