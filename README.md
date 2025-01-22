@@ -2,24 +2,27 @@
 
 Raj Swami Kontham
 
-## MyStyle
+## About
 
 This intelligent stylist recommends custom outfits to users based on clothing they already have. Scan an article of clothing, save it to your virtual wardrobe, and style it how you want.
 
+## Ideation
+
+MyStyle was conceptualized to elimenate the time deciding your outfit before going to work/school while also reccomending new ways to style the clothing you already have. This project is **still under development**. Click [here](https://drive.google.com/file/d/1n5ckOEFGoMeJJsNdEuAObo_koTsFnBfK/view?usp=sharing) to view initial sketches.
 
 ## Tech Stack
 
 - React Native / Tailwind CSS (UI)
 - Expo (Node.js runtime environment)
-- JupyterLab (Machine Learning Model)
-- Firebase (Auth)
-- Figma (Design)
+- JupyterLab (Machine learning environment)
+- Firebase (User authentication)
+- Figma (Logo and UI Design)
 
 ## Requirements
 
 IMPORTANT: To ensure proper execution of the app, minimize dependency conflicts within your virtual environment (venv or conda).
 
-    1. Create and activate a virtual environment. Conda is recommended, though any is fine.'
+    1. Create and activate a virtual environment. Conda is recommended, though any vritual environment type is fine.
     2. Install Python 3.11.
     3. Install npm or yarn (if you haven't already).
     4. Run the following npm and npx commands to install the libraries, packages, and dependencies necessary to run the app. Following this, you will clone the repo.
@@ -30,15 +33,11 @@ IMPORTANT: To ensure proper execution of the app, minimize dependency conflicts 
     6. Decide how to run the app. You may choose an Android/iOS simulator depending on your system OS, or install the Expo Go app on a mobile device to replicate the UI.
     7. Enter into the console: npx expo start. 
 
-## Troubleshooting
+## References
 
-Please submit all technical issues to rkontham24@gmail.com. You will recieve a response as soon as possible within standard business hours.
+Since this was a personal project with which I had little prior knowledge, there were many resources I consulted for background information. Below is a full list of videos and courses I've used to learn about the environments, frameworks, and technologies utilized within the code in the app. This project would not have been possible without these resources:
 
-## Reference
-
-Since this was a personal project, I had to learn lots of information on my own. Below is a full list of videos and courses I've used to learn about the technologies and help develop the code in the app.
-
-- React Native Course
-- Nicholas Renoutte ML
-- Firebase Setup
-- Udemy course
+- [Intro to Tensorflow Course](https://www.udacity.com/course/intro-to-tensorflow-for-deep-learning--ud187)
+- [React Native Course](https://drive.google.com/file/d/1n5ckOEFGoMeJJsNdEuAObo_koTsFnBfK/view?usp=sharing)
+- [Nicholas Renoutte](https://www.youtube.com/watch?v=jztwpsIzEGc&list=PLgNJO2hghbmiXg5d4X8DURJP9yv9pgjIu&index=2)
+- [Firebase Setup](https://www.youtube.com/watch?v=ONAVmsGW6-M)
