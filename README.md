@@ -8,7 +8,7 @@ This intelligent stylist recommends custom outfits to users based on clothing th
 
 ## Ideation
 
-MyStyle was conceptualized to elimenate the time deciding your outfit before going to work/school while also reccomending new ways to style the clothing you already have. This project is **still under development**. Click [here](https://drive.google.com/file/d/1n5ckOEFGoMeJJsNdEuAObo_koTsFnBfK/view?usp=sharing) to view initial sketches.
+MyStyle was conceptualized to elimenate the time deciding your outfit before going to work/school while also reccomending new ways to style the clothing you already have. This project is **still under development**. Click [here](https://drive.google.com/file/d/1n5ckOEFGoMeJJsNdEuAObo_koTsFnBfK/view?usp=sharing) to view initial sketches. Click [here](https://mystyle-training-logs.notion.site/Training-Log-f7394a21bfc74ffbadb6ce7dafc73e6e) to view the ongoing training log for the model.
 
 ## Tech Stack
 
