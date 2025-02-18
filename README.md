@@ -41,3 +41,5 @@ Since this was a personal project with which I had little prior knowledge, there
 - [React Native Course](https://drive.google.com/file/d/1n5ckOEFGoMeJJsNdEuAObo_koTsFnBfK/view?usp=sharing)
 - [Nicholas Renoutte](https://www.youtube.com/watch?v=jztwpsIzEGc&list=PLgNJO2hghbmiXg5d4X8DURJP9yv9pgjIu&index=2)
 - [Firebase Setup](https://www.youtube.com/watch?v=ONAVmsGW6-M)
+
+Disclaimer: I do not own any of the images in the data I used to train the machine learning model. These images and copyrights belong to their original owners. No copyright infringement intended.
