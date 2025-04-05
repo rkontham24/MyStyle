@@ -6,7 +6,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import images from "../constants";
 import WhiteButton from '../components/WhiteButton';
 import OrangeButton from '../components/OrangeButton';
-import { SwipeGesture } from 'react-native-swipe-gesture-handler'
+//import { SwipeGesture } from 'react-native-swipe-gesture-handler'
 //import * as tf from '@tensorflow/tfjs';
 //import '@tensorflow/tfjs-react-native';
 
@@ -14,11 +14,7 @@ export default function App() {
   return (
     <SafeAreaView className = "bg-nav h-full">
       <ScrollView contentContainerStyle = {{ height: '100%'}}>
-        <SwipeGesture
-          onSwipePerformed={onSwipePerformed}
-        >
           <View className = "w-full items-center justify-center min-h[85vh] px-2">
-            
             <Image
               source = {images.images.logo}
               style = {{position: 'absolute', top: 10}}
@@ -88,9 +84,7 @@ export default function App() {
             
 
           </View>
-        </SwipeGesture>
       </ScrollView>
-
       <StatusBar backgroundColor='#202834' style='light'/>
     </SafeAreaView>
   );
